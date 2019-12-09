@@ -11,7 +11,7 @@ while True:
     all_logs = get_logs_from_services.apply(service_location_names)
     new_logs = [x for x in all_logs if x not in old_logs]
     for log in new_logs:
-        print log
+        print(log)
     old_logs = all_logs
 
 
